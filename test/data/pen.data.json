@@ -1,0 +1,33 @@
+{
+    "penEnabledNumber": "1",
+    "penEnabledName": "Pen enabled",
+    "penDisabledNumber": "2",
+    "penDisabledName": "Pen disabled",
+    "penCount": "100",
+    "penCapacity": "200",
+    "penTargetDM": "60",
+    "penGoalDM": "65",
+
+    "penGroupDry": "Dry",
+    "penGroupLactating": "Lactating",
+    "penGroupYoungStock": "Young stock",
+
+    "penTypeCloseUp": "Close Up cows",
+    "penTypeDry": "Dry cows",
+    
+    "penType1stLacFresh": "1st lact Fresh cows",
+    "penType1stHi": "1st lact Hi milk cows",
+    "penType1stLow": "1st lact Low milk cows",
+    "penType1stMid": "1st lact Mid milk cows",
+    "penTypeFresh": "Fresh cows",
+    "penTypeHi": "Hi milk cows",
+    "penTypeHospital": "Hospital",
+    "penTypeLow": "Low milk cows",
+    "penTypeMid": "Mid milk cows",
+
+    "penTypeBreeding": "Breeding heifers",
+    "penTypeCloseUpHeif": "Close Up Heifers",
+    "penTypePreBreeding": "Pre breeding heifers",
+    "penTypePregnant": "Pregnant Heifers",
+    "penTypeSmall": "Small heifers"
+}
