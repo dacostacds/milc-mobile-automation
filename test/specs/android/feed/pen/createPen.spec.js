@@ -33,26 +33,54 @@ describe('Create pen', () => {
     it('Create pen enabled', async () => {
         // Create pen
         await NewPenScreen.enablePen();
-        await NewPenScreen.createPen(penData.penEnabledNumber, penData.penEnabledName, 
-            penData.penCount, penData.penCapacity, penData.penTargetDM, 
-            penData.penGoalDM, penData.penGroupDry, penData.penTypeDry);
+        await NewPenScreen.createPen(
+            penData.penEnabledNumber, 
+            penData.penEnabledName, 
+            penData.penCount, 
+            penData.penCapacity, 
+            penData.penTargetDM, 
+            penData.penGoalDM, 
+            penData.penGroupDry, 
+            penData.penTypeDry
+        );
         // Assert - Pen is enabled and have the correct data
         expect (await PenDetailScreen.penEnableSwitch.getAttribute("checked")).toBe("true");
-        await PenDetailScreen.validatePenValues(penData.penEnabledNumber, penData.penEnabledName, 
-            penData.penCount, penData.penCapacity, penData.penTargetDM, 
-            penData.penGoalDM, penData.penGroupDry, penData.penTypeDry);
+        await PenDetailScreen.validatePenValues(
+            penData.penEnabledNumber, 
+            penData.penEnabledName, 
+            penData.penCount, 
+            penData.penCapacity, 
+            penData.penTargetDM, 
+            penData.penGoalDM, 
+            penData.penGroupDry, 
+            penData.penTypeDry
+        );
     });
 
     it('Create pen disabled', async () => {
         // Create pen
         await NewPenScreen.disablePen();
-        await NewPenScreen.createPen(penData.penDisabledNumber, penData.penDisabledName, 
-            penData.penCount, penData.penCapacity, penData.penTargetDM, 
-            penData.penGoalDM, penData.penGroupDry, penData.penTypeDry);
+        await NewPenScreen.createPen(
+            penData.penDisabledNumber, 
+            penData.penDisabledName, 
+            penData.penCount, 
+            penData.penCapacity, 
+            penData.penTargetDM, 
+            penData.penGoalDM, 
+            penData.penGroupDry, 
+            penData.penTypeDry
+        );
         // Assert - Pen is disabled and have the correct data
         expect (await PenDetailScreen.penEnableSwitch.getAttribute("checked")).toBe("false");
-        await PenDetailScreen.validatePenValues(penData.penDisabledNumber, penData.penDisabledName, 
-            penData.penCount, penData.penCapacity, penData.penTargetDM, 
-            penData.penGoalDM, penData.penGroupDry, penData.penTypeDry);
+        await PenDetailScreen.validatePenValues(
+            penData.penDisabledNumber, 
+            penData.penDisabledName, 
+            penData.penCount, 
+            penData.penCapacity, 
+            penData.penTargetDM, 
+            penData.penGoalDM, 
+            penData.penGroupDry, 
+            penData.penTypeDry
+        );
     });
 });

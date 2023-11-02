@@ -1,4 +1,4 @@
-import Buttons from "../../../../utils/android/Buttons";
+import Button from "../../../../utils/android/Button";
 
 class NewPenScreen {
 
@@ -93,13 +93,13 @@ class NewPenScreen {
     async selectGroupType(group){
         await this.penGroupType.click();
         await $('//*[@text="'+group+'"]').click();
-        await Buttons.chooseBtn.click();
+        await Button.chooseBtn.click();
     }
 
     async selectPenType(type){
         await this.penType.click();
         await $('//*[@text="'+type+'"]').click();
-        await Buttons.chooseBtn.click();
+        await Button.chooseBtn.click();
     }
 
     async createPen(penNumber, penName, penCount, penCapacity, penTargetDM, penGoalDM, penGroup, penType){
@@ -115,7 +115,7 @@ class NewPenScreen {
         await this.selectPenType(penType);
 
         // Save pen
-        await Buttons.saveBtn.click();
+        await Button.saveBtn.click();
     }
 }
 
