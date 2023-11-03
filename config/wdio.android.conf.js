@@ -15,13 +15,13 @@ config.specs = [
     
 ];
 
-// config.suites = {
-//     smokeFeed: [
-//         '../test/specs/android/feed/loginFeed*.js',
-//         '../test/specs/android/feed/pen/createPen*.js'
-//         '../test/specs/android/feed/ingredient/createIngredient*.js'
-//     ]
-// };
+config.suites = {
+    smokeFeed: [
+        '../test/specs/android/feed/loginFeed*.js',
+        '../test/specs/android/feed/pen/createPen*.js',
+        '../test/specs/android/feed/ingredient/createIngredient*.js'
+    ]
+};
 
 // ============
 // Capabilities

@@ -8,9 +8,6 @@ import PenDetailScreen from "../../../../screen/android/feed/pen/PenDetail.scree
 describe('Create pen', () => {
 
     before(async () => {
-        ////
-        // Uncomment the following line to run only this spec - Comment to run the entire suite
-        ////
         await LoginSelectModule.loginEnterFeed(process.env.User, process.env.Password);
 
         await DashboardScreen.pensBtn.click();
@@ -30,7 +27,7 @@ describe('Create pen', () => {
         await driver.back();
     })
 
-    it.only('Create pen enabled', async () => {
+    it('Create pen enabled', async () => {
         // Create pen
         await NewPenScreen.enablePen();
         await NewPenScreen.createPen(

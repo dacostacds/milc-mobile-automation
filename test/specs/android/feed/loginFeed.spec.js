@@ -4,7 +4,7 @@ import LoginnScreen from "../../../screen/android/Login.screen";
 
 describe('Login Feed', () => {
     it('Successfull login feed', async () => {
-        LoginnScreen.login(process.env.User, process.env.Password);
+        await LoginnScreen.login(process.env.User, process.env.Password);
 
         await HomeeScreen.feedModule.click();
 

@@ -18,7 +18,8 @@
     "ts-node": "^10.9.1"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.js"
+    "wdio": "wdio run ./wdio.conf.js",
+    "smokeFeed": "wdio run ./wdio-conf.js --suite smokeFeed"
   },
   "dependencies": {
     "dotenv": "^16.3.1"
