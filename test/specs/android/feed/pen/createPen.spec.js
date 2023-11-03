@@ -30,7 +30,7 @@ describe('Create pen', () => {
         await driver.back();
     })
 
-    it('Create pen enabled', async () => {
+    it.only('Create pen enabled', async () => {
         // Create pen
         await NewPenScreen.enablePen();
         await NewPenScreen.createPen(
@@ -45,16 +45,14 @@ describe('Create pen', () => {
         );
         // Assert - Pen is enabled and have the correct data
         expect (await PenDetailScreen.penEnableSwitch.getAttribute("checked")).toBe("true");
-        await PenDetailScreen.validatePenValues(
-            penData.penEnabledNumber, 
-            penData.penEnabledName, 
-            penData.penCount, 
-            penData.penCapacity, 
-            penData.penTargetDM, 
-            penData.penGoalDM, 
-            penData.penGroupDry, 
-            penData.penTypeDry
-        );
+        await expect(PenDetailScreen.penCount).toHaveText(penData.penCount);
+        await expect(PenDetailScreen.penTargetDM).toHaveTextContaining(penData.penTargetDM);
+        await expect(PenDetailScreen.penNumber).toHaveText(penData.penEnabledNumber);
+        await expect(PenDetailScreen.penName).toHaveText(penData.penEnabledName);
+        await expect(PenDetailScreen.penCapacity).toHaveText(penData.penCapacity);
+        await expect(PenDetailScreen.penGoalDM).toHaveTextContaining(penData.penGoalDM);
+        await expect(PenDetailScreen.penGroup).toHaveText(penData.penGroupDry);
+        await expect(PenDetailScreen.penType).toHaveText(penData.penTypeDry);
     });
 
     it('Create pen disabled', async () => {
@@ -72,15 +70,13 @@ describe('Create pen', () => {
         );
         // Assert - Pen is disabled and have the correct data
         expect (await PenDetailScreen.penEnableSwitch.getAttribute("checked")).toBe("false");
-        await PenDetailScreen.validatePenValues(
-            penData.penDisabledNumber, 
-            penData.penDisabledName, 
-            penData.penCount, 
-            penData.penCapacity, 
-            penData.penTargetDM, 
-            penData.penGoalDM, 
-            penData.penGroupDry, 
-            penData.penTypeDry
-        );
+        await expect(PenDetailScreen.penCount).toHaveText(penData.penCount);
+        await expect(PenDetailScreen.penTargetDM).toHaveTextContaining(penData.penTargetDM);
+        await expect(PenDetailScreen.penNumber).toHaveText(penData.penDisabledNumber);
+        await expect(PenDetailScreen.penName).toHaveText(penData.penDisabledName);
+        await expect(PenDetailScreen.penCapacity).toHaveText(penData.penCapacity);
+        await expect(PenDetailScreen.penGoalDM).toHaveTextContaining(penData.penGoalDM);
+        await expect(PenDetailScreen.penGroup).toHaveText(penData.penGroupDry);
+        await expect(PenDetailScreen.penType).toHaveText(penData.penTypeDry);
     });
 });

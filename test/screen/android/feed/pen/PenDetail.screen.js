@@ -35,17 +35,6 @@ class PenDetail{
     get penType(){
         return $('//*[@resource-id="com.milcgroup.one:id/secondary_pen_type_value"]');
     }
-
-    async validatePenValues(penNumber, penName, penCount, penCapacity, penTargetDM, penGoalDM, penGroup, penType){
-        await expect(this.penCount).toHaveText(penCount);
-        await expect(this.penTargetDM).toHaveTextContaining(penTargetDM);
-        await expect(this.penNumber).toHaveText(penNumber);
-        await expect(this.penName).toHaveText(penName);
-        await expect(this.penCapacity).toHaveText(penCapacity);
-        await expect(this.penGoalDM).toHaveTextContaining(penGoalDM);
-        await expect(this.penGroup).toHaveText(penGroup);
-        await expect(this.penType).toHaveText(penType);
-    }
 }
 
 export default new PenDetail();
