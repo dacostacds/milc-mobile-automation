@@ -40,7 +40,7 @@ describe('Create recipe', () => {
         );
 
         // Save recipe
-        await Button.saveBtn.click();
+        await Button.saveBtn.click(); 
 
         // Assert - Recipe has the correct data
         await expect (RecipeDetailScreen.recipeDm).toHaveText(ingDmPct+'.00 %');
