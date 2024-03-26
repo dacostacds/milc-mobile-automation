@@ -29,10 +29,6 @@ class NewIngredientScreen {
         return $('//*[@resource-id="com.milcgroup.one:id/add_ingredient_notes_edittext"]');
     }
 
-    get globalIngredientList() {
-        return $$('android.widget.LinearLayout');
-    }  
-
     async addGlobalIngredient(globalIngredient) {
         const ingredientCharts = [...globalIngredient];
         await this.globalIngredientInput.click();

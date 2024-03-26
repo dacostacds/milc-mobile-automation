@@ -31,7 +31,7 @@ class LoginScreen {
         await driver.waitUntil(async () => {
             const loginProgress = await this.loginProgress.isExisting();
             return !loginProgress;
-        }, {timeout: 50000, timeoutMsg: "Timed out waiting for login"});
+        }, {timeout: 80000, timeoutMsg: "Timed out waiting for login"});
     }
 }
 

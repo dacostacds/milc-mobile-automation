@@ -20,6 +20,18 @@ class Buttons {
         return $('//*[@text="DELETE"]');
     }
 
+    get addBtn(){
+        return $('//*[@text="ADD"]');
+    }
+
+    get cancelBtn(){
+        return $('//*[@text="CANCEL"]');
+    }
+
+    get doneBtn(){
+        return $('//*[@text="Done"]');
+    }
+
 }
 
 export default new Buttons();
