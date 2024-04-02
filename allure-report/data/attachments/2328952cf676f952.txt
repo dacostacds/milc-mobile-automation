@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@resource-id=\"com.milcgroup.one:id/recipe_detail_af_per_head\"]"
+}

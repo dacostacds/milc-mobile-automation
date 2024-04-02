@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Apr 02 11:17:22 UYT 2024","Tue Apr 02 11:18:04 UYT 2024","42180","","Create recipe","","","","Create one ingredient recipe",""
+"passed","Tue Apr 02 11:16:55 UYT 2024","Tue Apr 02 11:17:22 UYT 2024","27579","","Create recipe","","","","""before all"" hook for Create recipe",""
+"passed","Tue Apr 02 11:17:22 UYT 2024","Tue Apr 02 11:17:54 UYT 2024","31810","","Create recipe","","","","""before each"" hook for Create recipe",""

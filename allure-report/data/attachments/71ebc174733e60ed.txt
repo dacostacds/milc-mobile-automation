@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@resource-id=\"com.milcgroup.one:id/one_facility_module_feed_image_view\"]"
+}
