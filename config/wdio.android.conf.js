@@ -11,7 +11,8 @@ config.port = 4723;
 // Specify Test Files
 // ==================
 config.specs = [
-    '../test/specs/android/feed/recipe/createRecipe*.js'
+    //'../test/specs/android/feed/loginFeed*.js'
+    '../test/specs/login*.js'
 ];
 
 config.suites = {

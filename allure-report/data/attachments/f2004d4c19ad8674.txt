@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//*[@resource-id=\"com.milcgroup.one:id/add_ingredient_amount_edit_text\"]"
-}

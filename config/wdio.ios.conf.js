@@ -11,7 +11,7 @@ config.port = 4723;
 // Specify Test Files
 // ==================
 config.specs = [
-    '../test/specs/ios/login*.js'
+    '../test/specs/login*.js'
 ];
 
 // ============

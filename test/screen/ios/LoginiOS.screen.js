@@ -1,6 +1,10 @@
 class LoginScreeniOS{
     get userInput(){
-        return $("//XCUIElementTypeTextField");
+
+        const selectorAndroid = '//*[@text="Email"]'
+        const selectorIOS = '//XCUIElementTypeTextField'
+        const selector = driver.isAndroid ? selectorAndroid : selectorIOS
+        return $(`${selector}`)
     }
 
     get passwordInput(){
