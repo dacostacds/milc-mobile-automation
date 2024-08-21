@@ -1,4 +1,4 @@
-import DashboardScreen from "../../../../screen/android/feed/Dashboard.screen";
+import DashboardScreen from "../../../../screen/feed/Dashboard.screen";
 import LoginSelectModule from "../../../../utils/android/LoginSelectModule";
 import PenScreen from "../../../../screen/android/feed/pen/Pen.screen";
 import NewPenScreen from "../../../../screen/android/feed/pen/NewPen.screen";

@@ -1,4 +1,4 @@
-import DashboardScreen from "../../../screen/feed/Dashboard.screen";
+import DashboardScreen from "../../../screen/android/feed/Dashboard.screen";
 import HomeeScreen from "../../../screen/android/Home.screen";
 import LoginnScreen from "../../../screen/android/Login.screen";
 

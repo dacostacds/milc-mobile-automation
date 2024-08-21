@@ -13,11 +13,17 @@ class Buttons {
     }
 
     get removeBtn(){
-        return $('//*[@text="Remove"]');
+        const selectorAndroid = '//*[@text="Remove"]';
+        const selectorIOS = '~Delete Pen';
+        const selector = driver.isAndroid ? selectorAndroid : selectorIOS;
+        return $(`${selector}`);
     }
 
     get deleteBtn(){
-        return $('//*[@text="DELETE"]');
+        const selectorAndroid = '//*[@text="DELETE"]';
+        const selectorIOS = '//XCUIElementTypeStaticText[@name="Delete"]';
+        const selector = driver.isAndroid ? selectorAndroid : selectorIOS;
+        return $(`${selector}`);
     }
 
     get addBtn(){

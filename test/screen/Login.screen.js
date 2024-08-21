@@ -42,7 +42,7 @@ class LoginScreen{
     async login(user, password){
         await this.userInput.addValue(user);
         await this.passwordInput.addValue(password);
-        await this.loginBtn.click();
+        await this.signInBtn.click();
 
         await driver.waitUntil(async () => {
             const loginProgress = await this.loginProgress.isExisting();

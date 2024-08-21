@@ -1,4 +1,4 @@
-import DashboardScreen from "../../../../screen/android/feed/Dashboard.screen";
+import DashboardScreen from "../../../../screen/feed/Dashboard.screen";
 import NewRecipeScreen from "../../../../screen/android/recipe/NewRecipe.screen";
 import RecipeScreen from "../../../../screen/android/recipe/Recipe.screen";
 import LoginSelectModule from "../../../../utils/android/LoginSelectModule";
