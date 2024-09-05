@@ -1,11 +1,11 @@
 import DashboardScreen from "../../../../screen/feed/Dashboard.screen";
-import NewRecipeScreen from "../../../../screen/android/recipe/NewRecipe.screen";
-import RecipeScreen from "../../../../screen/android/recipe/Recipe.screen";
+import NewRecipeScreen from "../../../../screen/feed/recipe/NewRecipe.screen";
+import RecipeScreen from "../../../../screen/feed/recipe/Recipe.screen";
 import LoginSelectModule from "../../../../utils/android/LoginSelectModule";
 import recipeData from "../../../../data/recipe.data.json";
 import ingredientData from "../../../../data/ingredient.data.json";
 import Button from "../../../../utils/android/Button";
-import RecipeDetailScreen from "../../../../screen/android/recipe/RecipeDetail.screen";
+import RecipeDetailScreen from "../../../../screen/feed/recipe/RecipeDetail.screen";
 import Operations from "../../../../utils/Operations";
 import costMethodMultiplier from "../../../../data/costMethodMultiplier.json";
 

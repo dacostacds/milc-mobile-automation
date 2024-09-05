@@ -1,9 +1,9 @@
 import DashboardScreen from "../../../../screen/feed/Dashboard.screen";
 import LoginSelectModule from "../../../../utils/android/LoginSelectModule";
-import PenScreen from "../../../../screen/android/feed/pen/Pen.screen";
-import NewPenScreen from "../../../../screen/android/feed/pen/NewPen.screen";
+import PenScreen from "../../../../screen/feed/pen/Pen.screen";
+import NewPenScreen from "../../../../screen/feed/pen/NewPen.screen";
 import penData from "../../../../data/pen.data.json";
-import PenDetailScreen from "../../../../screen/android/feed/pen/PenDetail.screen";
+import PenDetailScreen from "../../../../screen/feed/pen/PenDetail.screen";
 
 describe('Create pen', () => {
 

@@ -1,4 +1,4 @@
-class Home {
+class HomeScreen {
     get homeTitle(){
         const selectorAndroid = '//*[@text="Home"]';
         const selectorIOS = '~one';
@@ -15,4 +15,4 @@ class Home {
     }
 }
 
-export default new Home();
+export default new HomeScreen();

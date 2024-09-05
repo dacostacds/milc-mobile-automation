@@ -1,6 +1,6 @@
 import DashboardScreen from "../../../screen/feed/Dashboard.screen";
-import HomeeScreen from "../../../screen/android/Home.screen";
-import LoginnScreen from "../../../screen/android/Login.screen";
+import HomeeScreen from "../../../screen/Home.screen";
+import LoginnScreen from "../../../screen/Login.screen";
 
 describe('Login Feed', () => {
     it('Successfull login feed', async () => {

@@ -1,4 +1,4 @@
-import Buttons from "../../../../utils/android/Button";
+import Buttons from "../../../utils/android/Button";
 
 class PenScreen{
 

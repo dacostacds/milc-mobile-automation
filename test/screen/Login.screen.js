@@ -20,10 +20,6 @@ class LoginScreen{
         return $(`${selector}`);
     }
 
-    get loading(){
-        return $("~Loading");
-    }
-
     get remindMeCheckbox(){
         return $('//*[@text="Remember me"]');
     }

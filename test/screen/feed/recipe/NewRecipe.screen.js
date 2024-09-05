@@ -1,5 +1,5 @@
 import Button from "../../../utils/android/Button";
-import SelectIngredientScreen from "../feed/ingredient/SelectIngredient.screen";
+import SelectIngredientScreen from "../ingredient/SelectIngredient.screen";
 
 class NewRecipeScreen {
 

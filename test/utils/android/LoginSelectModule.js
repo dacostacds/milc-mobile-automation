@@ -1,5 +1,5 @@
 import LoginScreen from "../../screen/android/Login.screen";
-import HomeScreen from "../../screen/android/Home.screen";
+import HomeScreen from "../../screen/Home.screen";
 
 class LoginSelectModule {
     

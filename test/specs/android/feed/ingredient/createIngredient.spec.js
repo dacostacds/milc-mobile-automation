@@ -1,9 +1,9 @@
 import DashboardScreen from "../../../../screen/feed/Dashboard.screen";
-import IngredientScreen from "../../../../screen/android/feed/ingredient/Ingredient.screen";
-import NewIngredientScreen from "../../../../screen/android/feed/ingredient/NewIngredient.screen";
+import IngredientScreen from "../../../../screen/feed/ingredient/Ingredient.screen";
+import NewIngredientScreen from "../../../../screen/feed/ingredient/NewIngredient.screen";
 import LoginSelectModule from "../../../../utils/android/LoginSelectModule";
 import ingredientData from "../../../../data/ingredient.data.json";
-import IngredientDetailScreen from "../../../../screen/android/feed/ingredient/IngredientDetail.screen";
+import IngredientDetailScreen from "../../../../screen/feed/ingredient/IngredientDetail.screen";
 
 describe('Create ingredient', () => {
 

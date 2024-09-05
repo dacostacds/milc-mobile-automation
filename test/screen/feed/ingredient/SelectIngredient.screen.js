@@ -1,4 +1,4 @@
-import Button from "../../../../utils/android/Button";
+import Button from "../../../utils/android/Button";
 
 class SelectIngredientScreen{
 

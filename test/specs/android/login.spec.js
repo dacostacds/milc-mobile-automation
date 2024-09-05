@@ -1,5 +1,5 @@
-import HomeScreen from "../../screen/android/Home.screen";
-import LoginScreen from "../../screen/android/Login.screen";
+import HomeScreen from "../../screen/Home.screen";
+import LoginScreen from "../../screen/Login.screen";
 
 describe('Login', () => {
     it('Successfull login', async () => {
